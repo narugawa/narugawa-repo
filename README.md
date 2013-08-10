@@ -1,22 +1,22 @@
 narugawa-repo
 =============
 
-Bonjour à tous mon script est en phase beta et compatible uniquement débian ( Temporairement )
+##Bonjour à tous mon script est en phase beta et compatible uniquement débian ( Temporairement )
 
 
-Pour installer le script écrivez cette ligne en ssh root 
+##Pour installer le script écrivez cette ligne en ssh root 
 
-Version sans ssl
+##Version sans ssl
 
 wget https://raw.github.com/narugawa/narugawa-repo/master/setupnossl.sh $$ chmod a+x setupnossl.sh && ./setupnossl.sh
 
-Version avec ssl
+##Version avec ssl
 
 ...
 
-Plugins inclu 
+##Plugins inclu 
 
-[code]root@debian:/var/www/rutorrent/plugins# ls
+root@debian:/var/www/rutorrent/plugins# ls
 autotools   edit         _getdir      retrackers                source
 check_port  erasedata    history      rpc                       _task
 chunks      extratio     httprpc      rss                       theme
@@ -27,14 +27,14 @@ data        filemanager  mediastream  screenshots               unpack
 datadir     fileupload   _noty        seedingtime
 diskspace   geoip        ratio        show_peers_like_wtorrent
 root@debian:/var/www/rutorrent/plugins#
-[/code]
+
 
 --------
 
 ##Fonction a venir 
 
-*Multi os fedora centos debian ubuntu;
-*multi utilisateur;
-*Module Autodl-Irssi;
+* Multi os fedora centos debian ubuntu;
+* multi utilisateur;
+* Module Autodl-Irssi;
 
-*Je suis ouvert au suggestion
+* Je suis ouvert au suggestion
