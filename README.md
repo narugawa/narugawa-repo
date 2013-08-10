@@ -15,10 +15,9 @@ Pour installer le script écrivez cette ligne en ssh root
 ....
 
 ##Plugins inclue
-
-
+```
 ![Two Face Singing Example](http://img15.hostingpics.net/pics/239389Capture.jpg)
-
+```
 --------
 
 ##Fonction a venir 
