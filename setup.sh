@@ -111,7 +111,7 @@ cd rutorrent
     git clone https://code.google.com/p/plowshare/ plowshare4
     cd plowshare4
     make install
- 
+ rm -r -f plowshare4
 # Script de demarrage automatique de rtorrent
 
 # plu tard
@@ -165,8 +165,8 @@ mv plugins rutorrent/
 
 cd $wwwdir/rutorrent/conf
 rm -r -f plugins.ini config.php
-wget https://gist.github.com/narugawa/3138dcddc2703311ae3b/raw/a73b59132ded27c67481cc55fd4bcc297b702ce4/plugins.ini
-wget https://gist.github.com/narugawa/38e50ac1c19c9dca334a/raw/59c0c169f808b4b0b564b2d370371653db33c86a/config.php
+wget https://raw.github.com/narugawa/narugawa-repo/master/files/plugins.ini
+wget https://raw.github.com/narugawa/narugawa-repo/master/files/config.php
 perl -e "s/darky/$user/g;" -pi.bak $(find $wwwdir/rutorrent/conf -type f)
 
 cd $wwwdir/rutorrent/plugins
@@ -192,7 +192,7 @@ chmod -R 755 $wwwdir/rutorrent
 
 
 cd /$homedir/$user
-wget https://gist.github.com/narugawa/c4f387139c1b2110b1ab/raw/280610e1412e966dab54250870b8883dee511729/.rtorrent.rc
+wget https://raw.github.com/narugawa/narugawa-repo/master/files/.rtorrent.rc
 perl -e "s/darky/$user/g;" -pi.bak $(find $homedir/$user -type f)
 chown -R $user:$user /$homedir/$user/.rtorrent.rc
 
@@ -207,9 +207,9 @@ ServerTokens Prod"
 echo SCGIMount /RPC2 127.0.0.1:5000  >> $apachedir/apache2.conf
 perl -e "s/Timeout 300/Timeout 30/g;" -pi.bak $(find $apachedir/apache2.conf -type f)
 
-$apachedir/apache2.conf/sites-available
+$apachedir/apache2/sites-available
 rm -r -f default
-wget https://gist.github.com/narugawa/c2e9ca4fb1961b62b9a7/raw/7e8ab9f70ee6385e6ce2f44b5c4c8f65b660856b/default
+wget https://raw.github.com/narugawa/narugawa-repo/master/files/default
 perl -e "s/darky/$user/g;" -pi.bak $(find $apachedir/sites-available/default -type f)
 
 a2enmod scgi && /etc/init.d/apache2 restart
