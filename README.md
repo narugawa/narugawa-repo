@@ -1,5 +1,7 @@
 narugawa-repo
 =============
+narugawa-repo
+=============
 
 Bonjour à tous mon script est en phase beta et compatible uniquement débian ( Temporairement )
 
@@ -16,17 +18,17 @@ Pour installer le script écrivez cette ligne en ssh root
 
 ##Plugins inclu 
 
-`$root@debian:/var/www/rutorrent/plugins# ls
-autotools   edit         _getdir      retrackers                source
-check_port  erasedata    history      rpc                       _task
-chunks      extratio     httprpc      rss                       theme
-cookies     extsearch    ipad         rssurlrewrite             throttle
-cpuload     feeds        loginmgr     rutracker_check           tracklabels
-create      filedrop     mediainfo    scheduler                 trafic
-data        filemanager  mediastream  screenshots               unpack
-datadir     fileupload   _noty        seedingtime
-diskspace   geoip        ratio        show_peers_like_wtorrent
-root@debian:/var/www/rutorrent/plugins#`
+
+`$autotools   edit         _getdir      retrackers                source`
+`$check_port  erasedata    history      rpc                       _task`
+`$chunks      extratio     httprpc      rss                       theme`
+`$cookies     extsearch    ipad         rssurlrewrite             throttle`
+`$cpuload     feeds        loginmgr     rutracker_check           tracklabels`
+`$create      filedrop     mediainfo    scheduler                 trafic`
+`$data        filemanager  mediastream  screenshots               unpack`
+`$datadir     fileupload   _noty        seedingtime`
+`$diskspace   geoip        ratio        show_peers_like_wtorrent`
+
 
 
 --------
@@ -37,4 +39,4 @@ root@debian:/var/www/rutorrent/plugins#`
 * multi utilisateur;
 * Module Autodl-Irssi;
 
-* Je suis ouvert au suggestion
+Je suis ouvert au suggestion
