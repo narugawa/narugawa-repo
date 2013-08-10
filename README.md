@@ -12,6 +12,10 @@ Pour installer le script écrivez cette ligne en ssh root
 `$ chmod a+x setupnossl.sh && ./setupnossl.sh`
 
 ##Version avec ssl
+....
+
+Plugins inclue
+
 
 ![Two Face Singing Example](http://img15.hostingpics.net/pics/239389Capture.jpg)
 
