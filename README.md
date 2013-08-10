@@ -16,7 +16,7 @@ Version avec ssl
 
 Plugins inclu 
 
-root@debian:/var/www/rutorrent/plugins# ls
+[code]root@debian:/var/www/rutorrent/plugins# ls
 autotools   edit         _getdir      retrackers                source
 check_port  erasedata    history      rpc                       _task
 chunks      extratio     httprpc      rss                       theme
@@ -26,13 +26,17 @@ create      filedrop     mediainfo    scheduler                 trafic
 data        filemanager  mediastream  screenshots               unpack
 datadir     fileupload   _noty        seedingtime
 diskspace   geoip        ratio        show_peers_like_wtorrent
+root@debian:/var/www/rutorrent/plugins#
+[/code]
 
 --------
 
 Fonction a venir 
 
 Multi os fedora centos debian ubuntu
+
 multi utilisateur
+
 Module Autodl-Irssi
 
 Je suis ouvert au suggestion
