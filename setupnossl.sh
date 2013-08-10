@@ -37,9 +37,7 @@ deb-src http://ftp2.fr.debian.org/debian/ squeeze main non-free" >> /etc/apt/sou
 
 # Installation des paquets vitaux
 $packetg update
-$packetg install -y  apache2 apache2-utils autoconf build-essential ca-certificates comerr-dev libapache2-mod-php5 libcloog-ppl-dev libcppunit-dev libcurl3 libcurl4-openssl-dev libncurses5-dev ncurses-base ncurses-term libterm-readline-gnu-perl libsigc++-2.0-dev libssl-dev libtool libxml2-dev ntp openssl patch libperl-dev php5 php5-cli php5-dev php5-fpm php5-curl php5-geoip php5-mcrypt php5-xmlrpc pkg-config python-scgi dtach ssl-cert subversion unrar zlib1g-dev pkg-config unzip htop irssi curl cfv rar zip ffmpeg mediainfo git screen perl libapache2-mod-scgi
- 
-
+$packetg install -y subversion php5 libapache2-mod-scgi php5-curl build-essential automake libtool libcppunit-dev libcurl3-dev libsigc++-2.0-dev unzip unrar curl libncurses-dev git screen perl rar zip ffmpeg mediainfo
 if [ -z $homedir ]
 then
         homedir="/home"
@@ -153,7 +151,7 @@ fi
 
 # Creation du mot de passe de l'interface Rutorrent
 a2enmod auth_digest
-echo "${user}:rutorrent:"$(printf "${user}:rutorrent:${pwd}" | md5sum | awk '{print $1}') > /etc/apache2/htpasswd
+echo "${user}:rutorrent:"$(printf "${user}:rutorrent:${pwd}" | md5sum | awk '{print $1}') > $apachedir/htpasswd
 
 #On instal  Rutorrent
 
