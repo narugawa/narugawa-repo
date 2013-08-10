@@ -31,7 +31,7 @@ root@debian:/var/www/rutorrent/plugins#
 
 --------
 
-Fonction a venir 
+##Fonction a venir 
 
 *Multi os fedora centos debian ubuntu
 *multi utilisateur
