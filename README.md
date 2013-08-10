@@ -1,7 +1,5 @@
 narugawa-repo
 =============
-narugawa-repo
-=============
 
 Bonjour à tous mon script est en phase beta et compatible uniquement débian ( Temporairement )
 
