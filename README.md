@@ -14,7 +14,7 @@ Pour installer le script écrivez cette ligne en ssh root
 ##Version avec ssl
 ....
 
-Plugins inclue
+##Plugins inclue
 
 
 ![Two Face Singing Example](http://img15.hostingpics.net/pics/239389Capture.jpg)
