@@ -205,7 +205,7 @@ ServerTokens Prod"
 echo SCGIMount /RPC2 127.0.0.1:5000  >> $apachedir/apache2.conf
 perl -e "s/Timeout 300/Timeout 30/g;" -pi.bak $(find $apachedir/apache2.conf -type f)
 
-$apachedir/sites-available
+cd $apachedir/sites-available
 rm -r -f default
 wget https://raw.github.com/narugawa/narugawa-repo/master/files/default
 
