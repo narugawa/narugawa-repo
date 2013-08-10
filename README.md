@@ -33,8 +33,8 @@ root@debian:/var/www/rutorrent/plugins#
 
 ##Fonction a venir 
 
-*Multi os fedora centos debian ubuntu
-*multi utilisateur
-*Module Autodl-Irssi
+*Multi os fedora centos debian ubuntu;
+*multi utilisateur;
+*Module Autodl-Irssi;
 
 *Je suis ouvert au suggestion
