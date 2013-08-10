@@ -196,14 +196,16 @@ chown -R $user:$user /$homedir/$user/.rtorrent.rc
 
 
 # Configuration apache2
-
 echo "
 # security
 ServerSignature Off
-ServerTokens Prod"
-# Installation du mode SGCI d'Apache
-echo SCGIMount /RPC2 127.0.0.1:5000  >> $apachedir/apache2.conf
+ServerTokens Prod" >> $apachedir/apache2.conf
 perl -e "s/Timeout 300/Timeout 30/g;" -pi.bak $(find $apachedir/apache2.conf -type f)
+
+# Installation du mode SGCI d'Apache (obligatoire pour rtorrent et rutorrent)
+echo SCGIMount /RPC2 127.0.0.1:5000 >> $apachedir/apache2.conf
+
+
 
 cd $apachedir/sites-available
 rm -r -f default
