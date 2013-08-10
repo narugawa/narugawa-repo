@@ -210,7 +210,7 @@ perl -e "s/Timeout 300/Timeout 30/g;" -pi.bak $(find $apachedir/apache2.conf -ty
 $apachedir/apache2.conf/sites-available
 rm -r -f default
 wget https://gist.github.com/narugawa/c2e9ca4fb1961b62b9a7/raw/7e8ab9f70ee6385e6ce2f44b5c4c8f65b660856b/default
-perl -e "s/darky/$user/g;" -pi.bak $(find $apachedir/apache2/sites-available/default -type f)
+perl -e "s/darky/$user/g;" -pi.bak $(find $apachedir/sites-available/default -type f)
 
 a2enmod scgi && /etc/init.d/apache2 restart
 
