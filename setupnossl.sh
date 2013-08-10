@@ -214,7 +214,7 @@ a2enmod scgi && /etc/init.d/apache2 restart
 
 
 # Demarrage de rtorrent
-su "$user" -c 'screen -d -m -U -fa -S rtorrent rtorrent'
+su $user -c 'screen -d -m -U -fa -S rtorrent rtorrent'
 echo "--"
 echo " =========== FIN DE L'INSTALLATION ! On dirait que tout a fonctionne ! ==="
 echo "Username :$user"
