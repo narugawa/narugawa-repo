@@ -13,7 +13,7 @@ Pour installer le script écrivez cette ligne en ssh root
 
 ##Version avec ssl
 
-![Two Face Singing Example](https://github.com/exploid/songster/raw/master/images/me-sidebyside.gif)
+![Two Face Singing Example](http://img15.hostingpics.net/pics/239389Capture.jpg)
 
 --------
 
